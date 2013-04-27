@@ -10,11 +10,11 @@
         <title></title>
     </head>
     <body>
-        <p>This page has been generated with the html.php class that can be found <?php html::link('https://github.com/gonzalocasaseca/htmlhelper', 'Source code in GitHub') ?>.</p>
+        <p>This page has been generated with the html.php class that can be found <?php html::link('https://github.com/gonzalocasaseca/htmlhelper', 'here') ?>.</p>
         
-        <p>It allows you to create html elements on the fly saving typing and avoiding mistakes</p>
+        <p>It allows you to create html elements on the fly saving typing and avoiding mistakes.</p>
         
-        <p>This is the code to generate a <b>select</b> or <b>Drop-down List</b>:</p>
+        <p>This is the code to generate a <b>Select</b> or <b>Drop-down List</b>:</p>
         
         <code>
             $data = array('blue', 'red', 'yellow', 'green');<br />
@@ -28,7 +28,7 @@
         <br />
         <br />
         <p> 
-            You can also pass a hash witch key and values, similar to the way you get the data from a database. 
+            You can also pass a hash with keys and values, similar to the way you get the data from a database. 
             You can also select a default value.
         </p>
         
@@ -77,7 +77,7 @@
                             array('id' => 4, 'name' => 'Ryan', 'lastname' => 'Gaines', 'age' => '26'),<br />
                             array('id' => 5, 'name' => 'Michael', 'lastname' => 'Gates', 'age' => '31'));<br />
             <br />
-            //you can decide what values to show<br />
+            //you can decide which values to show<br />
             $file_names = array('name', 'lastname', 'age');<br />
             <br />
             $titles = array('NAME' => null, 'LAST NAME' => null, 'AGE' => null);<br />
@@ -93,7 +93,7 @@
                             array('id' => 4, 'name' => 'Ryan', 'lastname' => 'Gaines', 'age' => '26'),
                             array('id' => 5, 'name' => 'Michael', 'lastname' => 'Gates', 'age' => '31'));
             
-            //you can decide what values to show
+            //you can decide which values to show
             $file_names = array('name', 'lastname', 'age');
             
             $titles = array('NAME' => null, 'LAST NAME' => null, 'AGE' => null);
