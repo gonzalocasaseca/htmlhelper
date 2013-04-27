@@ -117,7 +117,7 @@ class html
         
         if (!is_null($tags))
         {
-            $button .= tags($tags);
+            $button .= self::tags($tags);
         }
         
         if (!is_null($disable))
