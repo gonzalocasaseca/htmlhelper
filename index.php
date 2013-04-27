@@ -9,7 +9,7 @@
         <title></title>
     </head>
     <body>
-        <p>This page has been generated with the html.php class that can be found here.</p>
+        <p>This page has been generated with the html.php class that can be found <?php html::link('https://github.com/gonzalocasaseca/htmlhelper', 'Source code in GitHub') ?>.</p>
         
         <p>It allows you to create html elements on the fly saving typing and avoiding mistakes</p>
         
@@ -106,6 +106,16 @@
         ?>
         
         <br />       
+        
+        <p>And of course Images</p>
+        <code>
+            html::image('http://www.w3.org/html/logo/downloads/HTML5_Logo_256.png', 'html5 logo', null, null, array('title' => 'HTML5 Logo'));<br />
+        </code>
+        <br />
+        <?php
+            html::image('http://www.w3.org/html/logo/downloads/HTML5_Logo_256.png', 'html5 logo', null, null, array('title' => 'HTML5 Logo'));
+        ?>
+        <br />
         
     </body>
 </html>

@@ -23,7 +23,7 @@ class html
         {
             foreach ($tags as $tag => $tag_value)
             {
-                $string .= '' . $tag . '="' . $tag_value . '"' ;            
+                $string .= $tag . '="' . $tag_value . '" ' ;            
             }
         }
         
@@ -71,6 +71,29 @@ class html
         echo '<script type="text/javascript" src="' . $path . '"></script>';
     }
     
+    public static function image($path, $alt, $width = null, $height = null, $tags = null)
+    {
+        $img = '<img ';
+        $img .= 'src = "' . $path . '" ';
+        
+        if (!is_null($width))
+        {
+            $img .= 'width = "' . $width . '" ';
+        }
+        
+        if (!is_null($height))
+        {
+            $img .= 'height = "' . $height . '" ';
+        }
+        
+        $img .= self::tags($tags);
+        
+        $img .= 'alt = "' . $alt . '" ';
+        
+        $img .= ' />';
+        
+        echo $img;
+    }
         
     public static function input($type, $name, $value, $tags)
     {
