@@ -104,7 +104,7 @@ class html
             $input .= 'value="' . $value . '" ';
         }
         
-        $input .= tags($tags);
+        $input .= self::tags($tags);
         
         $input .= $tags . '/>';
             
