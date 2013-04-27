@@ -95,9 +95,14 @@ class html
         echo $img;
     }
         
-    public static function input($type, $name, $value, $tags)
+    public static function input($type, $name, $value = null, $tags = null)
     {
-        $input = '<input type="' . $type . '" name="' . $name . '" value="' . $value . '" ';
+        $input = '<input type="' . $type . '" name="' . $name . '" ';
+        
+        if(!is_null($value))
+        {
+            $input .= 'value="' . $value . '" ';
+        }
         
         $input .= tags($tags);
         
