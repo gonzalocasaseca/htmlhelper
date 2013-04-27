@@ -106,9 +106,9 @@ class html
         
         $input .= self::tags($tags);
         
-        $input .= $tags . '/>';
+        $input .= '/>';
             
-        echo $tags;
+        echo $input;
     }
         
     public static function button($type, $label, $tags = null, $disable = null)
